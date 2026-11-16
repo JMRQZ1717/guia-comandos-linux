@@ -34,12 +34,13 @@ Para seguir la guía hace falta:
 ## 3. Navegar por las carpetas
 
 Lo primero en la terminal es saber dónde estás y cómo moverte de una carpeta a otra. 
-Para eso hay cuatro comandos:
+Para eso hay cinco comandos:
 
 - `pwd`: te dice la ruta de la carpeta en la que estás.
 - `ls`: enseña los archivos y carpetas que hay en el directorio actual.
 - `cd`: sirve para entrar en otra carpeta.
 - `realpath`: te da la ruta completa de un archivo o carpeta, empezando desde `/`.
+- `tree`: muestra las carpetas y archivos en forma de árbol, con todo lo que hay dentro de cada una. En Ubuntu no viene instalado; se instala con `sudo apt install tree`.
 
 ### Ejemplos
 
@@ -50,6 +51,7 @@ cd /etc              # Entra en la carpeta /etc
 cd ..                # Vuelve a la carpeta anterior
 cd ~/demo            # Entra en la carpeta demo de tu usuario
 realpath notas.txt   # Muestra la ruta completa de notas.txt
+tree ~/demo          # Muestra el contenido de demo en forma de árbol
 ```
 
 `ls -la` es bastante útil porque, además de los archivos ocultos, 
