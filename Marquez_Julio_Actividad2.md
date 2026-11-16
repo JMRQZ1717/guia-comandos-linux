@@ -205,3 +205,10 @@ Estos errores son bastante típicos cuando empiezas:
 - [Ubuntu - The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners)
 - [GNU Coreutils - Manual oficial](https://www.gnu.org/software/coreutils/manual/)
 - [Linux man pages online](https://man7.org/linux/man-pages/)
+
+## Información del proyecto
+
+Esta documentación se ha elaborado utilizando Markdown.
+
+El control de versiones se realiza mediante Git
+y el repositorio remoto se encuentra alojado en GitHub.
