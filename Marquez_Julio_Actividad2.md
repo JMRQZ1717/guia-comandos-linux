@@ -212,3 +212,9 @@ Esta documentación se ha elaborado utilizando Markdown.
 
 El control de versiones se realiza mediante Git
 y el repositorio remoto se encuentra alojado en GitHub.
+
+## Próximas mejoras
+
+- Añadir una sección sobre procesos con `ps`, `top` y `kill`.
+- Explicar los comandos básicos de red, como `ping` e `ip a`.
+- Incluir cómo comprimir y descomprimir archivos con `tar` y `zip`.
