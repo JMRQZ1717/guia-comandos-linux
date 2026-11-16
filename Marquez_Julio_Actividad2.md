@@ -11,8 +11,9 @@ En esta guía explico los comandos de Linux que más se usan al empezar con la t
 - [5. Ver el contenido de un archivo](#5-ver-el-contenido-de-un-archivo)
 - [6. Cambiar permisos y propietarios](#6-cambiar-permisos-y-propietarios)
 - [7. Práctica paso a paso](#7-práctica-paso-a-paso)
-- [8. Resolución de problemas](#8-resolución-de-problemas)
-- [9. Referencias](#9-referencias)
+- [8. Buscar archivos y texto](#8-buscar-archivos-y-texto)
+- [9. Resolución de problemas](#9-resolución-de-problemas)
+- [10. Referencias](#10-referencias)
 
 ---
 
@@ -157,9 +158,33 @@ cd ..
 rm -r practica
 ```
 
+## 8. Buscar archivos y texto
+
+Cuando hay muchas carpetas, buscar algo a mano con `ls` es un rollo. Para eso están `find`, que busca archivos por su nombre, y `grep`, que busca texto dentro de los archivos.
+
+| Comando | Qué busca                          | Ejemplo                       |
+| ------- | ---------------------------------- | ----------------------------- |
+| `find`  | Archivos y carpetas por su nombre. | `find ~ -name "notas.txt"`    |
+| `grep`  | Líneas que contienen un texto.     | `grep "conta" /etc/passwd`    |
+
+### Ejemplos
+
+```bash
+find ~ -name "*.txt"          # Todos los .txt de tu carpeta personal
+find /etc -name "*.conf"      # Archivos de configuración dentro de /etc
+grep -i "error" registro.log  # Líneas con "error", sin importar mayúsculas
+grep -r "ssh" /etc            # Busca "ssh" en todos los archivos de /etc
+```
+
+En `find`, el asterisco (`*`) vale por cualquier texto, así que `"*.txt"` encuentra todo lo que termine en `.txt`. Las comillas hacen falta para que la terminal no lo cambie antes de tiempo.
+
+Con `grep`, la opción `-i` hace que no distinga mayúsculas y minúsculas, y `-r` busca dentro de una carpeta y todas sus subcarpetas.
+
+> Si buscas en carpetas del sistema como `/etc` te pueden salir mensajes de `Permission denied`. No es un fallo del comando, son carpetas que tu usuario no puede leer.
+
 ---
 
-## 8. Resolución de problemas
+## 9. Resolución de problemas
 
 Estos errores son bastante típicos cuando empiezas:
 
@@ -173,7 +198,7 @@ Estos errores son bastante típicos cuando empiezas:
 > Si no te acuerdas de cómo va un comando, `man ls` o `ls --help` te enseñan todas sus opciones. 
 > Funciona con casi cualquier comando.
 
-## 9. Referencias
+## 10. Referencias
 
 - [Ubuntu - The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners)
 - [GNU Coreutils - Manual oficial](https://www.gnu.org/software/coreutils/manual/)
