@@ -1,6 +1,6 @@
 # Comandos Básicos de Linux
 
-En esta guía explico los comandos de Linux que más se usan al empezar con la terminal: moverse entre carpetas, trabajar con archivos, ver lo que tienen dentro y cambiar permisos. Está pensada para alguien que no ha usado nunca la terminal o la ha usado muy poco.
+En esta guía explico los comandos de Linux que más se usan al empezar con la terminal: moverse entre carpetas, trabajar con archivos, ver lo que tienen dentro, cambiar permisos y buscar archivos. Está pensada para alguien que no ha usado nunca la terminal o la ha usado muy poco.
 
 ## Índice
 
@@ -91,7 +91,7 @@ Con estos comandos es suficiente:
 - `head` muestra solo las primeras líneas.
 - `tail` muestra las últimas.
 
-### Ejemplo práctico
+### Ejemplos
 
 ```bash
 cat /etc/passwd
@@ -118,7 +118,7 @@ Los dos comandos que se usan para esto son:
 | `w`   | Escritura | Modificar su contenido.      |
 | `x`   | Ejecución | Ejecutarlo como un programa. |
 
-### Ejemplo
+### Ejemplos
 
 ```bash
 # Activar el permiso de ejecución a un script
