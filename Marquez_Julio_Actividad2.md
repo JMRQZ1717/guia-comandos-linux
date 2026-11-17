@@ -218,3 +218,10 @@ y el repositorio remoto se encuentra alojado en GitHub.
 - Añadir una sección sobre procesos con `ps`, `top` y `kill`.
 - Explicar los comandos básicos de red, como `ping` e `ip a`.
 - Incluir cómo comprimir y descomprimir archivos con `tar` y `zip`.
+
+## Recomendaciones de seguridad
+
+- Antes de usar `rm -r` o `rm -rf`, comprueba con `pwd` y `ls` en qué carpeta estás y qué vas a borrar. Lo que se borra así no pasa por la papelera.
+- Usa `sudo` solo cuando el comando lo necesite de verdad. Con `sudo` un error puede estropear archivos del sistema.
+- No des permisos `777` a ningún archivo ni carpeta, porque cualquier usuario podría modificarlos. Para scripts basta con `755` y para archivos normales con `644`.
+- Revisa los permisos con `ls -l` antes de ejecutar un script que hayas descargado de Internet, y lee su contenido con `cat` o `less`.
